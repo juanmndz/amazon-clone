@@ -35,7 +35,7 @@
     width: 100%;
 }
 
-.header_option {
+.header__option {
     display: flex;
     flex-direction: column;
     margin-left: 10px;

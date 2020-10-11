@@ -2,6 +2,8 @@ export const initialState = {
     basket: [],
 }
 
+// Selector
+export const getBasketTotal= basket => basket?.reduce((amount, item) => item.price + amount, 0)
 // global dispatch actions to the global store
 
 const reducer = (state, action) => {
