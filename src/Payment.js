@@ -35,7 +35,6 @@ function Payment() {
         getClientSecret()
     }, [basket])
 
-    console.log('The secret is >>>', clientSecret)
 
 
 
