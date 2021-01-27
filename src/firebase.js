@@ -1,14 +1,24 @@
 import firebase from 'firebase'
-
-const firebaseConfig = {
-    apiKey: "AIzaSyDzA385dOth1qvOwYo4q5PjTeHKxwHqLTs",
-    authDomain: "fir-react-6980b.firebaseapp.com",
-    databaseURL: "https://fir-react-6980b.firebaseio.com",
-    projectId: "fir-react-6980b",
-    storageBucket: "fir-react-6980b.appspot.com",
-    messagingSenderId: "674980101710",
-    appId: "1:674980101710:web:aaad31314714e4b5b10d1f"
-};
+const {
+    REACT_APP_apiKey,
+    REACT_APP_authDomain,
+    REACT_APP_databaseURL,
+    REACT_APP_projectId,
+    REACT_APP_storageBucket,
+    REACT_APP_messagingSenderId,
+    REACT_APP_appId,
+    REACT_APP_measurementId,
+  } = process.env;
+  const firebaseConfig = {
+    apiKey: REACT_APP_apiKey,
+    authDomain: REACT_APP_authDomain,
+    databaseURL: REACT_APP_databaseURL,
+    projectId: REACT_APP_projectId,
+    storageBucket: REACT_APP_storageBucket,
+    messagingSenderId: REACT_APP_messagingSenderId,
+    appId: REACT_APP_appId,
+    measurementId: REACT_APP_measurementId,
+  };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig)
 
